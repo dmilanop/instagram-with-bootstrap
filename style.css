@@ -1,0 +1,17 @@
+.heading-first{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.div-first{
+    display: flex;
+    margin-right: 1rem;
+}
+.button-first{
+    margin-right: 1rem;
+    font-size: 18px;
+}
+.pagination-first{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
