@@ -21,36 +21,38 @@
                 <div class="div-first">
 
 
-                    <button type="button" class="btn btn-success button-first" data-toggle="modal"
-                        data-target="#exampleModal">
+                    <button type="button" class="btn btn-success button-first" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Create a new post
                     </button>
 
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <button type="button" class="btn btn-light border-0"><i class="fas fa-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt"></i>
+                                    </button>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+
                     <div class="btn-group">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="true">
+                        <button type="button" class="btn btn-secondary dropdown-toggle button-second"
+                            data-bs-toggle="dropdown" aria-expanded="true">
                             <i class="fas fa-cog"></i>
                         </button>
                         <ul class="dropdown-menu">
@@ -60,7 +62,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,12 +71,147 @@
         </header>
 
         <section>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination pagination-first">
-                    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-square"></i></a></li>
-                    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-th"></i></a></li>
-                </ul>
-            </nav>
+            <ul class="nav nav-pills mb-3 justify-content-center ul-first" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><i class="fas fa-square"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><i class="fas fa-th"></i></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-sm-4 img1"><img src="https://picsum.photos/id/1015/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img2"><img src="https://picsum.photos/id/1016/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img3"><img src="https://picsum.photos/id/1018/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-sm-4 img1"><img src="https://picsum.photos/id/1020/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img2"><img src="https://picsum.photos/id/1032/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img3"><img src="https://picsum.photos/id/1044/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-sm-4 img1"><img src="https://picsum.photos/id/1058/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img2"><img src="https://picsum.photos/id/1072/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-12 col-md-4 col-sm-4 img3"><img src="https://picsum.photos/id/119/900/600"
+                                    class="img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade feed" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/1020/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/119/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/1016/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/133/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/158/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="section-feed">
+                        <div class="post1">
+                            <p><strong>My first photo</strong></p>
+                            <span>12/14</span>
+                        </div>
+                        <div class=first-photo>
+                            <img src="https://picsum.photos/id/180/1000/600">
+                        </div>
+                        <div class=p1>
+                            <p>This is my first photo of the feed. This is a multi line comment for testing purposes. I
+                                am learning to code with <strong>#BreatheCode</strong></p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
         </section>
 
     </main>

@@ -1,17 +1,62 @@
 .heading-first{
-    margin-left: 2rem;
+    margin-left: 6rem;
     font-size: 1.5rem;
 }
 .div-first{
     display: flex;
-    margin-right: 1rem;
+    margin-right: 10rem;
 }
 .button-first{
     margin-right: 1rem;
-    font-size: 18px;
+    font-size: 15px;
 }
-.pagination-first{
+.ul-first{
+    margin-top: 1rem;
+}
+.nav-link{
+    color: black;
+    background: black;
+}
+.img1{
+    display: flex;
+    justify-content: start;
+}
+.img2{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+}
+.img3{
+    display: flex;
+    justify-content: end;
+}
+.feed{
+    background-color: rgb(197, 195, 195);
+}
+.post1{
+    display: flex;
+    justify-content: space-between;
+}
+.post1 > p{
+    padding-left: 1rem;
+    font-size: 20px;
+}
+.post1 > span{
+    padding-top: 10px;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.section-feed > .p1{
+    font-size: 20px;
+    padding: 1px;
+    padding-left: 1rem;
+}
+.section-feed{
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    border-radius: 2%;
+}
+.first-photo{
+    display: flex;
+    justify-content: center;
 }
